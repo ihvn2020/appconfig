@@ -1,0 +1,218 @@
+    {
+        "id": "NMRSreportingui.reports",
+        "description": "Homepage showing a list of different kinds of reports",
+        "order": 10,
+        "extensionPoints": [
+            {
+                "id": "org.openmrs.module.reportingui.reports.monitoring",
+                "description": "M&E reports",
+                "supportedExtensionTypes": [ "link" ]
+            },
+			{
+                "id": "org.openmrs.module.reportingui.reports.lab",
+                "description": "Lab related reports",
+                "supportedExtensionTypes": [ "link" ]
+            }
+			
+            
+        ],
+        "extensions": [
+		     {
+                "id": "reportingui.reports.homepagelink",
+                "extensionPointId": "org.openmrs.referenceapplication.homepageLink",
+                "type": "link",
+                "label": "NigeriaMRS Reporting Module",
+                "url": "reportingui/reportsapp/home.page",
+                "icon": "icon-umbrella",
+                "order": 2,
+                "requiredPrivilege": "App: reportingui.reports"
+},
+            
+           {
+                "id": "RADET",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "RADET",
+                "url": "reportingui/runReport.page?reportDefinition=45af899b-f6d2-4a46-b89a-e6b5696dd7de",
+                "order": 1,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+           {
+                "id": "EXITS",
+                
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                
+                "type": "link",
+                "label": "Exits",
+                "url": "reportingui/runReport.page?reportDefinition=6aca4f01-c8f2-4b0a-a112-c37dff0e66b1",
+                "order": 2,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+			{
+                "id": "TX_NEW",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "TX_NEW",
+                "url": "reportingui/runReport.page?reportDefinition=a8fb8071-79c0-4bfc-982d-2a2a1b6b8db1",
+                "order": 3,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+           {
+                "id": "Viral Load",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "Viral Load Results",
+                "url": "reportingui/runReport.page?reportDefinition=3ae768dd-4acb-4ce3-b846-693e9dfeb285",
+                "order": 4,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+           {
+                "id": "Missed Appointment",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "Missed Appointments",
+                "url": "reportingui/runReport.page?reportDefinition=319982d1-68dd-45f6-a0ef-ef1dc4e883dd",
+                "order": 5,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+			{
+                "id": "Scheduled Appointment",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "Scheduled Appointments",
+                "url": "reportingui/runReport.page?reportDefinition=2bcc0d06-8120-4d85-99a7-530675b080e6",
+                "order": 6,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+			{
+                "id": "Clinic Visit",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "Clinic Visits",
+                "url": "reportingui/runReport.page?reportDefinition=62d95963-bed4-41b3-ab15-0492d04b98d3",
+                "order": 7,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+			{
+                "id": "Viral Load Eligibility",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "Viral Load Eligibility",
+                "url": "reportingui/runReport.page?reportDefinition=9d363fa4-e132-4a39-962f-c9872e285172",
+                "order": 8,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+			{
+                "id": "Fingerprint Statistics",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "Finger Print Statistics",
+                "url": "reportingui/runReport.page?reportDefinition=6001512e-8cd3-4f5c-9c86-02f9989effb1",
+                "order": 9,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+			{
+                "id": "Drug Export",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "Dispensed Drug Exports",
+                "url": "reportingui/runReport.page?reportDefinition=d39509bc-4881-11e7-a919-92ebcb67fe33",
+                "order": 10,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+           {
+                "id": "HTS",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "HTS Exports",
+                "url": "reportingui/runReport.page?reportDefinition=65dba83d-b268-48af-a7ee-dd1626cd37a1",
+                "order": 11,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+			{
+                "id": "GENERAL ANC",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "PMTCT Line List",
+                "url": "reportingui/runReport.page?reportDefinition=3959a398-0ec7-45df-9ae2-5039ebfa736e",
+                "order": 12,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+          {
+                "id": "Child Birth Registration",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "HIV Exposed Infants",
+                "url": "reportingui/runReport.page?reportDefinition=eaabfbea-83c3-49a4-b1fb-25ac95391d7f",
+                "order": 13,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+             {
+                "id": "Child Follow Up",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "Child Follow Up",
+                "url": "reportingui/runReport.page?reportDefinition=eaabfbea-83c3-49a4-b1fb-25ac95391d7f",
+                "order": 15,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+           {
+                "id": "Maternal Cohort",
+                "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
+                "type": "link",
+                "label": "Maternal Cohort",
+                "url": "reportingui/runReport.page?reportDefinition=004adb10-7da2-47b7-bdfc-dd798245a850",
+                "order": 16,
+                "requiredPrivilege": "App: reportingui.reports"
+            },
+           {
+      "id": "EncounterWithoutAddPastVisit",
+      "extensionPointId": "org.openmrs.module.reportingui.reports.dataquality",
+      "type": "link",
+      "label": "Error - Encounter Without Add Past Visits",
+      "url": "reportingui/runReport.page?reportDefinition=64b6148d-12b9-46df-bdba-896ae7504ae5",
+      "order": 1,
+      "requiredPrivilege": "App: reportingui.reports"
+    },
+{
+      "id": "DuplicateARTStartDate",
+      "extensionPointId": "org.openmrs.module.reportingui.reports.dataquality",
+      "type": "link",
+      "label": "Error - Duplicate ART Start Date",
+      "url": "reportingui/runReport.page?reportDefinition=5c4758bf-b1be-45ca-8924-daddc3963b24",
+      "order": 2,
+      "requiredPrivilege": "App: reportingui.reports"
+    },
+{
+      "id": "IncompleteViralLoadData",
+      "extensionPointId": "org.openmrs.module.reportingui.reports.dataquality",
+      "type": "link",
+      "label": "Error - Viral Loads Without Reported Dates",
+      "url": "reportingui/runReport.page?reportDefinition=33ddb8f8-3bfa-4953-b654-21d60966ec72",
+      "order": 3,
+      "requiredPrivilege": "App: reportingui.reports"
+    },
+{
+      "id": "PharmacyFormWithoutRegimen",
+      "extensionPointId": "org.openmrs.module.reportingui.reports.dataquality",
+      "type": "link",
+      "label": "Error - Pharmacy Forms Without Regimen",
+      "url": "reportingui/runReport.page?reportDefinition=5165f183-74f8-47ee-b84d-e18432524c13",
+      "order": 4,
+      "requiredPrivilege": "App: reportingui.reports"
+    },
+{
+      "id": "PharmacyFormWithoutDuration",
+      "extensionPointId": "org.openmrs.module.reportingui.reports.dataquality",
+      "type": "link",
+      "label": "Error - Pharmacy Forms Without Duration",
+      "url": "reportingui/runReport.page?reportDefinition=4d8abe9b-1ec7-4dd0-bc2f-727b79b9e7cf",
+      "order": 5,
+      "requiredPrivilege": "App: reportingui.reports"
+    }
+   
+   
+   
+        ],
+        "requiredPrivilege": "App: reportingui.reports"
+    }
