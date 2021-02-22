@@ -152,7 +152,7 @@
                 "extensionPointId": "org.openmrs.module.reportingui.reports.monitoring",
                 "type": "link",
                 "label": "Child Follow Up",
-                "url": "reportingui/runReport.page?reportDefinition=eaabfbea-83c3-49a4-b1fb-25ac95391d7f",
+                "url": "reportingui/runReport.page?reportDefinition=34e0883c-5b15-4fc4-a929-239cfa1b0ecb",
                 "order": 15,
                 "requiredPrivilege": "App: reportingui.reports"
             },
